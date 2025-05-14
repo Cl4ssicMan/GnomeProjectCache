@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ItemRenderer>
+  <Data>
+    <Sprite name="s_hat" fileName="game/server_87/item.rttex" textureSize="32"/>
+    
+    <StateMachines>
+      <StateMachine name="Motion">
+        <States>
+          <State name="Idle"/>
+          <State name="Move"/>
+        </States>
+        <Transitions>
+          <Transition from="Move" to="Idle">
+            <Condition>
+              <IsVariableFloat name="speed.length" operator="Less" abs="true">0.1</IsVariableFloat>
+            </Condition>
+          </Transition>
+          <Transition from="Idle" to="Move">
+            <Condition>
+              <IsVariableFloat name="speed.length" operator="Greater" abs="true">0.1</IsVariableFloat>
+            </Condition>
+          </Transition>
+        </Transitions>
+      </StateMachine>
+    </StateMachines>
+    
+    <RenderOptions>
+      <Default>
+        <Set name="UserNameOffset">6</Set>
+      </Default>
+    </RenderOptions>
+  </Data>
+  
+  <RenderRules>
+    <RenderHat>
+      <StopIf>
+        <IsZombified>true</IsZombified>
+      </StopIf>
+      <SpriteRender name="s_hat" offset="0,0" alignment="DOWN_CENTER"/>
+    </RenderHat>
+  </RenderRules>
+</ItemRenderer>
