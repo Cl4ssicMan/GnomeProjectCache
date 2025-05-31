@@ -4742,4 +4742,87 @@
 		<EnableOnServer>true</EnableOnServer>
 	</Pet>
 
+	<Pet itemID="ITEM_ID_PET_HATCHLEY">
+		<Name>"Pet Hatchley"</Name>
+		<SubName>"hatch"</SubName>
+		<EndName>"ley"</EndName>
+		<PowerName>"Musically Stunned!"</PowerName>
+		<PowerDesc>"Sings to deal 10 `wAir`` Damage and stuns the target for 8s, making them unable to act."</PowerDesc>
+		<Element>"AIR"</Element>
+		<Damage>10</Damage>
+		<Cooldown>10</Cooldown>
+		<PowerType>"ATTACK"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="STUNNED">
+				<Value>0</Value>
+				<Duration>8</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SHOOT"</AnimType>
+		<PowerParticle>22</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/bird3.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>100</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+	
+	<Pet itemID="ITEM_ID_CAPTAIN_BARK">
+		<Name>"Captain Bark"</Name>
+		<SubName>"capi"</SubName>
+		<EndName>"bark"</EndName>
+		<PowerName>"Supercharge"</PowerName>
+		<PowerDesc>"Charge up your next skill with +50% Damage."</PowerDesc>
+		<Element>"FIRE"</Element>
+		<Damage>0</Damage>
+		<Cooldown>30</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="SUPERCHARGED">
+				<Value>50</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SPLAT"</AnimType>
+		<PowerParticle>134</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/levelup2.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
+
+	<Pet itemID="ITEM_ID_ROYAL_CAPTAIN_BARK">
+		<Name>"Royal Captain Bark"</Name>
+		<SubName>"roya"</SubName>
+		<EndName>"bark"</EndName>
+		<PowerName>"Supercharge"</PowerName>
+		<PowerDesc>"Charge up your next skill with +80% Damage."</PowerDesc>
+		<Element>"FIRE"</Element>
+		<Damage>0</Damage>
+		<Cooldown>20</Cooldown>
+		<PowerType>"SELF_STATUS"</PowerType>
+		<PowerFlags>0</PowerFlags>
+		<PowerStatusGroup>
+			<PowerStatus type="SUPERCHARGED">
+				<Value>80</Value>
+				<Duration>10</Duration>
+			</PowerStatus>
+		</PowerStatusGroup>
+		<AnimType>"SPLAT"</AnimType>
+		<PowerParticle>134</PowerParticle>
+		<HitParticle>0</HitParticle>
+		<PowerParticleV2>0</PowerParticleV2>
+		<HitParticleV2>0</HitParticleV2>
+		<PowerSound>"audio/levelup2.wav"</PowerSound>
+		<PowerHitSound>""</PowerHitSound>
+		<Rarity>90</Rarity>
+		<EnableOnServer>true</EnableOnServer>
+	</Pet>
 </BattlePets>
